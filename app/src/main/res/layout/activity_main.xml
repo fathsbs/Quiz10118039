@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            //kotak pertama
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kotak1">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="24dp"
+                    android:src="@mipmap/logo_foreground" />
+
+                <TextView
+                    android:id="@+id/digiteam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@id/logo"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="DigiTeam"
+                    android:textColor="@color/gray900"
+                    android:textFontWeight="500"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/together"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/digiteam"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@id/logo"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="Digital Together Everyone Achieve More"
+                    android:textColor="@color/gray600"
+                    android:textFontWeight="400"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/together"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@id/logo"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="Jabar Digital Service"
+                    android:textColor="@color/gray600"
+                    android:textFontWeight="400"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/fp_foreground"/>
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@id/fp"
+                    android:layout_toRightOf="@+id/fp"
+                    android:text="Dias Eko Fredianto, S.Kom, B.IT"
+                    android:textColor="@color/gray900"
+                    android:textFontWeight="500"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/pekerjaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/nama"
+                    android:text="UI Designer"
+                    android:layout_toEndOf="@id/fp"
+                    android:layout_toRightOf="@+id/fp"
+                    android:textColor="@color/gray600"
+                    android:textFontWeight="500"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/kotak2">
+
+                <TextView
+                    android:id="@+id/jam"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="22dp"
+                    android:text="Jam Kerja Bulan Ini"
+                    android:textColor="@color/gray900"
+                    android:textFontWeight="500"
+                    android:textSize="28dp"
+                    />
+
+                <TextView
+                    android:id="@+id/bulan"
+                    android:layout_below="@id/jam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="22dp"
+                    android:text="Jam kerja kamu bulan ini : 130.53 jam"
+                    android:textColor="@color/blue900"
+                    android:textFontWeight="500"
+                    android:textSize="20dp"
+                    />
+
+                <View
+                    android:layout_below="@id/bulan"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="@drawable/kotak3"
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
