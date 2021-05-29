@@ -150,7 +150,49 @@
                     android:layout_marginRight="22dp"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
-                    android:background="@drawable/kotak3"
+                    android:background="@drawable/kotak3"/>
+
+                <TextView
+                    android:id="@+id/jamKerja"
+                    android:layout_below="@id/bulan"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="130.53 JAM"
+                    android:textColor="@color/white"
+                    android:textFontWeight="500"
+                    android:textSize="28dp"
+                    />
+
+                <TextView
+                    android:id="@+id/batas"
+                    android:layout_below="@id/jamKerja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="22dp"
+                    android:text="Batas Minimum Jam Kerja 170 Jam/Bulan"
+                    android:textColor="@color/gray600"
+                    android:textFontWeight="500"
+                    android:textSize="20dp"
+                    />
+
+                <Button
+                    android:layout_below="@id/batas"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/kotak4"
+                    android:layout_marginBottom="31dp"
+                    android:text="Checkin"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:padding="15dp"/>
+
 
             </RelativeLayout>
 
